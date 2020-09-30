@@ -5,7 +5,7 @@ import psycopg2
 
 postgresConnection    = psycopg2.connect( host="localhost",database="my",user="postgres",password="Anup@123")
 cursor                = postgresConnection.cursor()
-name_Table            = "data"
+name_Table            = "data_name"
 sqlCreateTable = "create table "+name_Table+" (id bigint, summary varchar(800));"
 cursor.execute(sqlCreateTable)
 postgresConnection.commit()
@@ -28,8 +28,11 @@ if num > 1:
             # msg ={ num : 'is not a prime number so no Date'}
             # print(json.dumps(msg))
             print('Date is not a prime number so no Date')
-            sqlInsertRow1 = "INSERT INTO data values(1,'Date is not a prime number so no Date')";
-            cursor.execute(sqlInsertRow1)
+            # sqlInsertRow1 =""" INSERT INTO mobile (id,summary) VALUES (%s,%s)"""
+            cursor.execute("INSERT INTO data_name (id, summary) VALUES (1,'Date is not a prime number so no Date')");
+            # sqlInsertRow12 = "INSERT INTO data values(1,'Date is not a prime number so no Date')";
+            # cursor.execute(sqlInsertRow12)
+            postgresConnection.commit()
             break
     else:
         # msg = response.json()
@@ -39,8 +42,8 @@ else:
     # msg = {num : 'is not a prime number so no Date'}
     # print(json.dumps(msg))
     print('Date is not a prime number so no Date')
-    sqlInsertRow1 = "INSERT INTO data values(1,'Date is not a prime number so no Date')";
-    cursor.execute(sqlInsertRow1)
+    cursor.execute("INSERT INTO data_name (id, summary) VALUES (1,'Date is not a prime number so no Date')");
+    postgresConnection.commit()
 
 
 
