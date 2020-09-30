@@ -33,6 +33,7 @@ if num > 1:
             break
     else:
         # msg = response.json()
+
         # print(json.dumps(msg))
         print(response.json())
 else:
