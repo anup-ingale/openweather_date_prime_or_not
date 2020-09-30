@@ -3,9 +3,9 @@ import  requests
 import  datetime
 import psycopg2
 
-postgresConnection    = psycopg2.connect( host="localhost",database="db_name",user="postgres",password="Anup@123")
+postgresConnection    = psycopg2.connect( host="localhost",database="my",user="postgres",password="Anup@123")
 cursor                = postgresConnection.cursor()
-name_Table            = "table_name"
+name_Table            = "data"
 sqlCreateTable = "create table "+name_Table+" (id bigint, summary varchar(800));"
 cursor.execute(sqlCreateTable)
 postgresConnection.commit()
@@ -28,7 +28,7 @@ if num > 1:
             # msg ={ num : 'is not a prime number so no Date'}
             # print(json.dumps(msg))
             print('Date is not a prime number so no Date')
-            sqlInsertRow1 = "INSERT INTO code values(1,'Date is not a prime number so no Date')";
+            sqlInsertRow1 = "INSERT INTO data values(1,'Date is not a prime number so no Date')";
             cursor.execute(sqlInsertRow1)
             break
     else:
@@ -39,7 +39,7 @@ else:
     # msg = {num : 'is not a prime number so no Date'}
     # print(json.dumps(msg))
     print('Date is not a prime number so no Date')
-    sqlInsertRow1 = "INSERT INTO code values(1,'Date is not a prime number so no Date')";
+    sqlInsertRow1 = "INSERT INTO data values(1,'Date is not a prime number so no Date')";
     cursor.execute(sqlInsertRow1)
 
 
