@@ -1,6 +1,15 @@
 import json
 import  requests
 import  datetime
+import psycopg2
+
+postgresConnection    = psycopg2.connect( host="localhost",database="db_name",user="postgres",password="Anup@123")
+cursor                = postgresConnection.cursor()
+name_Table            = "table_name"
+sqlCreateTable = "create table "+name_Table+" (id bigint, summary varchar(800));"
+cursor.execute(sqlCreateTable)
+postgresConnection.commit()
+
 
 url = 'http://api.openweathermap.org/'
 api_key = '271d1234d3f497eed5b1d80a07b3fcd1'
@@ -19,6 +28,8 @@ if num > 1:
             # msg ={ num : 'is not a prime number so no Date'}
             # print(json.dumps(msg))
             print('Date is not a prime number so no Date')
+            sqlInsertRow1 = "INSERT INTO code values(1,'Date is not a prime number so no Date')";
+            cursor.execute(sqlInsertRow1)
             break
     else:
         # msg = response.json()
@@ -28,6 +39,9 @@ else:
     # msg = {num : 'is not a prime number so no Date'}
     # print(json.dumps(msg))
     print('Date is not a prime number so no Date')
+    sqlInsertRow1 = "INSERT INTO code values(1,'Date is not a prime number so no Date')";
+    cursor.execute(sqlInsertRow1)
+
 
 
 
