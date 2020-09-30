@@ -11,8 +11,8 @@ date_name = x['dt']
 date_m = datetime.datetime.fromtimestamp(date_name)
 current_day = date_m.strftime('%d')
 
-num = int(current_day)
-# num = 10
+# num = int(current_day)
+num = 7
 if num > 1:
     for i in range(2, num):
         if (num % i) == 0:
