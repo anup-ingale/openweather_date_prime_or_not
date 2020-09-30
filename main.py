@@ -5,6 +5,7 @@ import psycopg2
 
 postgresConnection    = psycopg2.connect( host="localhost",database="my",user="postgres",password="Anup@123")
 cursor                = postgresConnection.cursor()
+# Use one to create the DB using  script
 # name_Table            = "data_name"
 # sqlCreateTable = "create table "+name_Table+" ( id SERIAL PRIMARY KEY, summary varchar(800));"
 # cursor.execute(sqlCreateTable)
@@ -33,7 +34,6 @@ if num > 1:
             break
     else:
         # msg = response.json()
-
         # print(json.dumps(msg))
         print(response.json())
 else:
