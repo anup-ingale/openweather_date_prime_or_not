@@ -1,0 +1,62 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="14">
+            <item index="0" class="java.lang.String" itemvalue="Django" />
+            <item index="1" class="java.lang.String" itemvalue="pytz" />
+            <item index="2" class="java.lang.String" itemvalue="Pillow" />
+            <item index="3" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="4" class="java.lang.String" itemvalue="certifi" />
+            <item index="5" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="6" class="java.lang.String" itemvalue="requests" />
+            <item index="7" class="java.lang.String" itemvalue="urllib3" />
+            <item index="8" class="java.lang.String" itemvalue="click" />
+            <item index="9" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="10" class="java.lang.String" itemvalue="django-chatbot" />
+            <item index="11" class="java.lang.String" itemvalue="chatbotAI" />
+            <item index="12" class="java.lang.String" itemvalue="Flask" />
+            <item index="13" class="java.lang.String" itemvalue="idna" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E271" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="backend.src.front.api.serializers.front" />
+          <option value="backend.src.front.api.views.front" />
+          <option value="django.http.request.POST" />
+          <option value="frontend.api.views.detail_view.method" />
+          <option value="frontend.api.views.detail_view.POST" />
+          <option value="rest_framework.request.method" />
+          <option value="rest_framework.request.POST" />
+          <option value="django.contrib.sites.requests.get" />
+          <option value="backend.backendapi.api.serializers.FrontEndSerializer.POST" />
+          <option value="backend.backendapi.api.serializers.FrontEndSerializer.*" />
+          <option value="frontend.api.serializers.FrontEndSerializer.method" />
+          <option value="frontend.api.serializers.FrontEndSerializer.*" />
+          <option value="frontend.api.views.DetailTodo.method" />
+          <option value="frontend.api.views.DetailTodo.POST" />
+          <option value="frontend.api.views.ListUsers.method" />
+          <option value="frontend.api.views.ListUsers.POST" />
+          <option value="frontend.forms.CityForm.*" />
+          <option value="datetime.timezone.now" />
+          <option value="personal_portfolio.personal_portfolio.views.portfolio" />
+          <option value="django_heroku" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
