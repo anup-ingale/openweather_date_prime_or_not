@@ -28,7 +28,7 @@ if num > 1:
             # msg ={ num : 'is not a prime number so no Date'}
             # print(json.dumps(msg))
             print('Date is not a prime number so no Date')
-            cursor.execute("INSERT INTO data_name (id, summary) VALUES ( DEFAULT ,'Date is not a prime number so no Date')");
+            cursor.execute("INSERT INTO data_name (id, summary) VALUES ( DEFAULT  ,'Date is not a prime number so no Date')");
             postgresConnection.commit()
             break
     else:
